@@ -1,0 +1,144 @@
+
+
+.scroll_effect_text {
+    font-size: 1rem;
+    padding-left: 2px; 
+    color: #2153A2;  
+}
+
+.scroll_effect_inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -webkit-box-align: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;    
+  margin: 0 auto;
+  padding-bottom: 8em;
+}
+
+.scroll_effect_inner:before {
+  position: absolute;
+  left: 50%;
+  bottom: -2.61538em;
+  height: 7.53846em;
+  background: #2153A2;
+  z-index: 1; 
+  width: 1px;
+  content: "";
+  font-size: 1.3rem;
+  margin: 0 auto;
+}
+
+.scroll_effect_label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: .03em;
+  line-height: 1;
+  margin: 0 auto;
+}
+
+.scroll_effect_point {
+  position: absolute;
+  left: 13%;
+  font-family: "Font Awesome 5 Free";
+  content: '\f005';
+  color: yellow; 
+  font-weight: 900;
+  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color: orange; 
+  bottom: 6.5rem;
+  z-index: 2;
+  animation: scroll-point 2.6s ease-out infinite;
+  -webkit-animation: scroll-point 2.6s ease-out infinite;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;   
+}
+
+.scroll_effect_point:before {
+  z-index: 0;
+  font-family: "Font Awesome 5 Free";
+  content: '\f005';
+  color: yellow; 
+  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color: orange; 
+  animation: scroll-point-zoom 2.6s ease-out infinite;
+  -webkit-animation: scroll-point-zoom 2.6s ease-out infinite;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;  
+}
+
+.scroll_effect_point:after, .scroll_effect_point:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Font Awesome 5 Free";
+  content: '\f005';
+  color: yellow; 
+  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color: orange; 
+}
+
+.scroll_effect_point:after, .scroll_effect_point:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Font Awesome 5 Free";
+  content: '\f005';
+  color: yellow; 
+  font-weight: 900;
+  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color: orange; 
+}
+
+@-webkit-keyframes scroll-point {
+  0% {
+    bottom: 6.5rem;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  48% {
+    bottom: -4.28571em;
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    bottom: -4.28571em;
+    opacity: 0;
+  }
+}
+
+@keyframes scroll-point {
+  0% {
+    bottom: 6.5rem;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  48% {
+    bottom: -3.28571em;
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    bottom: -4.28571em;
+    opacity: 0;
+  }
+}
+
+
